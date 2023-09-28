@@ -2,61 +2,173 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Learning the basics of HTML for beginners"
+    />
+    <title>HTML is simple!</title>
   </head>
   <body>
-    <h1>hello</h1>
+    <header>
+      <a href="/">
+        <img
+          src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/b04pflogo.svg"
+          alt="Planet Fatness logo"
+          width="40"
+          height="40"
+        />
+      </a>
+      <!-- Тег <nav> використовується лише для основної навігації, а не для будь-якої групи посилань у документі. -->
+      <nav>
+        <ul>
+          <li><a href="">Our Clubs</a></li>
+          <li><a href="">PF Benefits</a></li>
+          <li><a href="">Tips and Programs</a></li>
+        </ul>
+        <!-- головна навігація — це посилання, що при натисканні проскроллять сторінку до певного розділу без її перезавантаження -->
+        <ul>
+          <li><a href="#clubs">Our Clubs</a></li>
+          <li><a href="#benefits">PF Benefits</a></li>
+          <li><a href="#programs">Tips and Programs</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <section>Секція</section>
-    <p>Абзац</p>
-    <a>Посилання</a>
-    <button>Кнопка</button>
+    <h2 id="clubs">Find us near you</h2>
 
-    <!-- h1 бажано використовувати но 1 раз -->
-    <h1>Sweet cheese pancakes</h1>
-    <!-- lorem і воно додасть рандомний текс  -->
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quia eaque
-      eum soluta ab, provident ea odit temporibus fuga incidunt beatae fugiat at
-      dolorem tempore facilis impedit eius atque illum?
-    </p>
+    <h2 id="benefits">Why choose Planet Fatness?</h2>
 
-    <a href="https://google.com" class="link">...</a>
-    <img src="cat.jpg" alt="cute cat" />
-    <input type="text" name="user_name" />
-    <button type="submit">...</button>
+    <h2 id="programs">How to stop doubting and start exercising regularly</h2>
+    <main>
+      <section>Секція</section>
+      <p>Абзац</p>
+      <a>Посилання</a>
+      <button>Кнопка</button>
 
-    <a href="https://google.com">Посилання на головну сторінку Google</a>
+      <!-- h1 бажано використовувати но 1 раз -->
+      <h1>Sweet cheese pancakes</h1>
+      <!-- lorem і воно додасть рандомний текс  -->
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quia eaque
+        eum soluta ab, provident ea odit temporibus fuga incidunt beatae fugiat
+        at dolorem tempore facilis impedit eius atque illum?
+      </p>
+      <br />
 
-    <!-- target=”_blank” щоб відкривадло іншу стрінку при натисканні -->
-    <a href="https://instagram.com/goitclub" target="_blank"
-      >Author's profile</a
-    >
+      <a href="https://google.com" class="link">...</a><br />
+      <img src="cat.jpg" alt="cute cat" /><br />
+      <input type="text" name="user_name" /><br />
+      <button type="submit">...</button><br />
 
-    <img
-      src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/pancakes.jpg"
-      alt="Sweet cheese pancakes served with berries"
-      width="320"
-    />
+      <a href="https://google.com">Посилання на головну сторінку Google</a
+      ><br />
 
-    <!-- <ul> (unordered list) невпорядкований список -->
-    <ul>
-      <li>2 cups farmer's cheese, homemade</li>
-      <li>3 large eggs</li>
-      <li>3 cups all-purpose flour, plus about 1/2 cup more for dredging</li>
-      <li>3 tablespoons white sugar</li>
-      <li>Туніс</li>
-      <li>3 tablespoons white sugar</li>
-      <li>3 tablespoons white sugar</li>
-      <li>fresh fruit, jam, or sour cream for topping</li>
-    </ul>
-    <!-- <ol> нумерований (впорядкований) список -->
-    <ol>
-      <li>Закип'яти воду</li>
-      <li>Засип чай у чашку</li>
-      <li>Налий в чашку окропу</li>
-      <li>Зачекай 10 хвилин, після чого можна пити</li>
-    </ol>
+      <!-- target=”_blank” щоб відкривадло іншу стрінку при натисканні -->
+      <a href="https://instagram.com/goitclub" target="_blank"
+        >Author's profile</a
+      >
+
+      <img
+        src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/pancakes.jpg"
+        alt="Sweet cheese pancakes served with berries"
+        width="320"
+      />
+      <!-- <ul> (unordered list) невпорядкований список -->
+      <section>
+        <ul>
+          <li>2 cups farmer's cheese, homemade</li>
+          <li>3 large eggs</li>
+          <li>
+            3 cups all-purpose flour, plus about 1/2 cup more for dredging
+          </li>
+          <li>3 tablespoons white sugar</li>
+          <li>Туніс</li>
+          <li>3 tablespoons white sugar</li>
+          <li>3 tablespoons white sugar</li>
+          <li>fresh fruit, jam, or sour cream for topping</li>
+        </ul>
+      </section>
+      <!-- <ol> нумерований (впорядкований) список -->
+      <ol>
+        <li>Закип'яти воду</li>
+        <li>Засип чай у чашку</li>
+        <li>Налий в чашку окропу</li>
+        <li>Зачекай 10 хвилин, після чого можна пити</li>
+      </ol>
+
+      <ul>
+        <li>
+          <img
+            src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/B031.jpg"
+            alt="PF Power Zone. A modern gym equipped with treadmills."
+            width="320"
+          />
+          <a href="https://goo.gl/maps/qBnEfK5AingPLZgb9" target="_blank"
+            >Open in Google Maps</a
+          >
+        </li>
+      </ul>
+
+      <address>
+        Call us: <a href="tel:+070174069900">+070174069900</a><br />
+        Email us:
+        <a href="mailto:fatnessescape@doit.com">fatnessescape@doit.com</a><br />
+        You may also want to visit us:<br />
+        Lorem Foundation<br />
+        332 E Jacked Ave<br />
+        Mountain View, CA 94041<br />
+        USA
+      </address>
+      <button type="button">Request a callback</button>
+    </main>
+
+    <footer>
+      <!-- Зображення логотипів соцмереж має бути у форматі SVG. -->
+      <ul>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img
+              src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/b04insta.svg"
+              alt="Instagram"
+              width="32"
+              height="32"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img
+              src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/b04facebook.svg"
+              alt="Facebook"
+              width="32"
+              height="32"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/" target="_blank"
+            ><img
+              src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/b04youtube.svg"
+              alt="YouTube"
+              width="32"
+              height="32"
+          /></a>
+        </li>
+      </ul>
+      <p>Для полужирного тексту, виділіть його тегами <strong> і </strong>.</p>
+      <p>
+        Для полужирного тексту, виділіть його тегами &lt;strong&gt; і
+        &lt;/strong&gt;.
+      </p>
+
+      <p>Всі права захищені &copy; Lex, 2020</p>
+      <p>Всі права захищені &#169; Lex, 2020</p>
+      <p>Всі права захищені &#xa9; Lex, 2020</p>
+
+      <p>
+        &copy;2023 ARST Planet Fatness, Ltd. All rights reserved. Unless
+        otherwise indicated, all materials on the page are copyrighted by ARST
+        Planet Fatness, Limited. All rights reserved. No part of this page,
+        either text or image may be used for any purpose.
+      </p>
+    </footer>
   </body>
 </html>
