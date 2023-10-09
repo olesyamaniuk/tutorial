@@ -1,0 +1,30 @@
+.link {
+  color: teal;
+}
+
+.link:hover {
+  color: tomato;
+}
+social-links .link {
+  color: teal;
+}
+
+li a:hover {
+  color: green;
+  background-color: grey;
+}
+
+.social-links .link {
+  color: teal;
+}
+/* active - при натисканні мишки */
+.social-links .link:active {
+  color: red;
+}
+/* hover - при наводі мишки */
+/* focus - при натисканні Tab колір міняє */
+/* Два і більше селекторів для одного правила поділяються комою */
+.social-links .link:hover,
+.social-links .link:focus {
+  color: orange;
+}
