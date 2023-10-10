@@ -1,3 +1,7 @@
+/* h1 {
+  color: #000;
+}
+
 .link {
   color: teal;
 }
@@ -17,14 +21,85 @@ li a:hover {
 .social-links .link {
   color: teal;
 }
-/* active - при натисканні мишки */
-.social-links .link:active {
+/* ACTIVATE - при натисканні мишки */
+/* .social-links .link:active {
   color: red;
 }
-/* hover - при наводі мишки */
-/* focus - при натисканні Tab колір міняє */
+/* VISITED- при відвідуванні */
+/* .social-links .link:visited {
+  color: red;
+}
+/* HOVER - при наводі мишки */
+/* FOCUS - при натисканні Tab колір міняє */
 /* Два і більше селекторів для одного правила поділяються комою */
-.social-links .link:hover,
+/* .social-links .link:hover,
 .social-links .link:focus {
   color: orange;
+} */
+
+
+/* ---------------------------- */
+/* УНІВЕРСАЛЬНИЙ СЕЛЕКТОР */
+/* міняє колір усіх елементів */
+/* * {
+  color: teal;
+} */
+
+/* СЕЛЕКТОР ТЕГА */
+/* h1 p a */
+/* h1{
+color: aqua;
+} */
+
+/* СЕЛЕКТОР ПО ID */
+/* можна використовувати тільки раз 
+id мають бути унікальними*/
+/* #title {
+  color: aqua;
+} */
+
+/* СЕЛЕКТОР КЛАСУ */
+/* .main-title {
+  color: yellowgreen;
+} */
+/* CЕЛЕКТОР АТРИБУТА */
+/* [href] {
+  color: yellowgreen;
+}
+[href="https://www.instagram.com"]
+{
+  color: tomato;
+} */
+
+/* CЕЛЕКТОР НАЩАДКА */
+/* .menu .menu-link{
+  color: yellow;
+} */
+/* ДОЧЕРНІЙ СЕЛЕКТОР */
+/* .menu > .menu-item{
+  border: 1px solid teal;
+} */
+
+/* body{
+  color: springgreen;
+} */
+
+/* змінює преший рядок */
+p::first-line
+{
+font-size: 20px;
+color: yellowgreen;
+}
+/* змінює прешу букву*/
+p::first-letter
+{
+font-size: 20px;
+color: rgb(50, 128, 205);
+}
+/* коли виділяється текст */
+p::selection{
+  color: #e916a9;
+/* без нічого тоді робить на всій сторінці */
+::selection{
+  color: #e916a9;
 }

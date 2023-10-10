@@ -8,22 +8,42 @@
       content="Learning the basics of HTML for beginners"
     />
     <title>HTML is simple!</title>
+    <!-- підключення css -->
     <link rel="stylesheet" href="./styles.css" />
+    <!-- <style>
+      ЩОБ ШВИДШЕ ЗАВАНТАЖУВАЛО
+      header styles
+      hero styles
+      h1 {
+        color: #000;
+      }
+    </style> -->
   </head>
   <body>
-    <ul class="social-links">
-      <li><a class="link" href="<https://twitter.com>">Twitter</a></li>
-      <li><a class="link" href="<https://www.instagram.com>">Instagram</a></li>
-      <li><a class="link" href="<https://www.facebook.com>">Facebook</a></li>
+
+    <ul class="menu">
+      <li class="menu-item">
+        <ul class="submenu">
+          <li class="menu-item"><a href="" class="menu-link">submenu link 1</a></li>
+          <li class="menu-item"><a href="" class="menu-link">submenu link 2</a></li>
+          <li class="menu-item"><a href="" class="menu-link">submenu link 3</a></li>
+          <li class="menu-item"><a href="" class="menu-link">submenu link 4</a></li>
+        </ul>
+      </li>
+      <li class="menu-item"><a class="menu-link" href="https://twitter.com">Twitter</a></li>
+      <li class="menu-item"><a class="menu-link" href="https://www.instagram.com">Instagram</a></li>
+      <li class="menu-item"><a class="menu-link" href="https://www.facebook.com">Facebook</a></li>
     </ul>
 
     <p>
       Відмінну шпаргалку за тегами можна знайти
-      <a class="link" href="<https://htmlreference.io>">за посиланням</a>.
+      <a class="link" href="https://htmlreference.io">за посиланням</a>.
     </p>
-
-    <h1>lorem</h1>
-    <p>
+    <h1 class="main-title">lorem</h1>
+    <!-- <h1 style="color: aqua">lorem</h1> -->
+    <!-- можна використовувати тільки раз. id мають бути унікальними -->
+    <!-- <h1 id="title">lorem</h1> -->
+    <p class="">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laboriosam
       beatae modi, nulla quas consectetur debitis et eos repudiandae excepturi
       adipisci vel voluptas nam soluta distinctio cupiditate quidem rerum sequi.
@@ -105,15 +125,15 @@
       </p>
       <br />
 
-      <a href="https://google.com" class="link">...</a><br />
+      <!-- <a href="https://google.com" class="link">...</a><br />
       <img src="cat.jpg" alt="cute cat" /><br />
       <input type="text" name="user_name" /><br />
-      <button type="submit">...</button><br />
+      <button type="submit">...</button><br /> -->
 
       <a href="https://google.com">Посилання на головну сторінку Google</a
       ><br />
 
-      <!-- target=”_blank” щоб відкривадло іншу стрінку при натисканні -->
+      <!-- target="_blank" щоб відкривадло іншу стрінку при натисканні -->
       <a href="https://instagram.com/goitclub" target="_blank"
         >Author's profile</a
       >
