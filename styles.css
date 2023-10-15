@@ -85,21 +85,26 @@ id мають бути унікальними*/
 } */
 
 /* змінює преший рядок */
-p::first-line
+/* p::first-line
 {
 font-size: 20px;
 color: yellowgreen;
 }
 /* змінює прешу букву*/
-p::first-letter
+/* p::first-letter
 {
 font-size: 20px;
 color: rgb(50, 128, 205);
 }
 /* коли виділяється текст */
-p::selection{
+/* p::selection{
   color: #e916a9;
 /* без нічого тоді робить на всій сторінці */
-::selection{
+/* ::selection{
   color: #e916a9;
+}  */ 
+
+
+h1{
+text-transform: capitalize;
 }
