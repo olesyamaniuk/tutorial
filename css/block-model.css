@@ -1,0 +1,131 @@
+/* .hero-descriptin {
+  width: 260;
+  padding: 10;
+  border: 10px solid tomato;
+  /* за замовчуванням треба рахувати щоб все збігалося з макетом*/
+/* box-sizing: content-box; */
+/* ширина і висота задається включаючи paddong border margin воно само вирахову content */
+/* задається кінцевий розмір ширини і висотил*/
+/* box-sizing: border-box; */
+/* }  */
+/* універсальний селектор. звертаємося до всіх елементів  */
+/* * {
+   box-sizing: border-box; 
+   підключаємо modern normalaяe воно в собі то має
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  /* img - inline  за дфолтом і тому є відступи між ними. зкщо зробити їх блоковими то відступів не буде*/
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+html {
+  line-height: 1.2;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.main-title {
+  margin-bottom: 20px;
+  border: 1px solid tomato;
+  background-color: teal;
+}
+
+.hero-description {
+  margin-top: 40px;
+  border: 1px solid teal;
+}
+/* між секціями треба робити padding через фон щоб текс не був зразу на кінці якогось фону*/
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.about-us {
+  background-color: tomato;
+}
+
+/* 
+an + b
+
+a - довільне число
+n - лічильник, який починається з 0 і завжди збільшується на 1
+b - довільне число
+*/
+
+/* 
+2n + 1 - odd
+
+2 * 0 + 1 = 1;
+2 * 1 + 1 = 3;
+2 * 2 + 1 = 5;
+*/
+
+/* 
+2n - even
+
+2 * 0 = 0;
+2 * 1 = 2;
+2 * 2 = 4;
+2 * 3 = 6;
+*/
+
+/* .products-list-item {
+  background-color: teal;
+} */
+
+.products-list-item:first-child,
+.products-list-item:last-child {
+  background-color: teal;
+}
+
+.products-list-item:nth-child(3) {
+  background-color: teal;
+}
+
+.products-list-item:nth-child(2n) {
+  background-color: teal;
+}
+/* 
+-n + 3
+
+-0 + 3 = 3;
+-1 + 3 = 2;
+-2 + 3 = 1;
+*/
+/* треба скидати відступи для останньогог елемента */
+/* .products-list-item:not(:nth-last-child(-n + 2)) {
+  background-color: teal;
+} */
+
+/* .products-list-item:nth-child(even) .products-list-img {
+  border: 10px solid teal;
+} */
