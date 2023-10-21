@@ -45,11 +45,30 @@ ol {
 
 .benefits-list {
   display: flex;
+
+  /* row за замовчуванням */
   flex-direction: row;
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+
+  /* вирівнюємо по головні осі */
+  /* flex-start за замовчуванням */
   justify-content: flex-start;
+
+  /* вирівнювання по допоміжній осі */
+  /* stretch за замовчуванням */
+  /* align-items:stretch; */
   align-items: flex-start;
+
+  /* щоб елементи переходили на наступний рядок */
+  /* за замовчуванням nowrap */
   flex-wrap: wrap;
+
+  /* розташування рядків на допоміжній осі 
+  використовується рідко бо не час є висота і нема по чому вирівнювати*/
   align-content: stretch;
+
   /* row-gap: 20px;
   column-gap: 40px; */
   /* gap: 20px 40px; */
@@ -61,13 +80,24 @@ ol {
 .benefits-list-item {
   width: 300px;
   border: 1px solid tomato;
+  /* розподіляємо місце на головній осі між елементами */
+  flex-grow: 0;
+
+  /* сискання елементів кои вони не поміщаються */
+  flex-shrink: 1;
 }
 
 .benefits-list-item-first {
+  /* змінюк порядок ел на головній осі */
+  order: 2;
+  /* міняє розташуання ел на допоміжній осі */
+  align-self: flex-end;
 }
 
 .benefits-list-item-second {
+  order: 3;
 }
 
 .benefits-list-item-third {
+  order: 1;
 }
