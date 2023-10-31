@@ -1,0 +1,28 @@
+.background {
+  width: 900px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 10px dashed rgba(255, 0, 0, 0.5);
+  color: #ffffff;
+  /* додається фонове зображення */
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0.4),
+      rgba(17, 17, 17, 0.4)
+    ),
+    /* шлях до зображення */ url("https://picsum.photos/seed/picsum/200/300");
+  background-repeat: no-repeat;
+  background-position: left top;
+  /* background-position: 10px 10px; */
+  /* відступає з прав а 10 і знизу 10 */
+  /* background-position: right 10px bottom 10px; */
+
+  background-color: #303030;
+  /* зображення збільшується поки не досягне рамки */
+  /* background-size: contain; */
+  /* розтягується поки не заповнить весь контейнер */
+  background-size: cover;
+  /*  background-size: 100px 150px;*/
+  background-origin: padding-box;
+  background-clip: padding-box;
+}
