@@ -7,22 +7,32 @@
   color: #ffffff;
   /* додається фонове зображення */
   background-image: linear-gradient(
-      rgba(17, 17, 17, 0.4),
+      /* задаємо затемнення. є на макеті який колір задавати */
+        rgba(17, 17, 17, 0.4),
       rgba(17, 17, 17, 0.4)
     ),
-    /* шлях до зображення */ url("https://picsum.photos/seed/picsum/200/300");
+    url("https://picsum.photos/seed/picsum/200/300");
+  /* додає градієнт */
+  /* background-image: linear-gradient(blue, yellow); */
+  /* можна додавти шлях до кількох зображень
+    але тоді треба і розміщення дописувати і все решту */
   background-repeat: no-repeat;
   background-position: left top;
+  /* background-position: left top, right top; */
   /* background-position: 10px 10px; */
   /* відступає з прав а 10 і знизу 10 */
   /* background-position: right 10px bottom 10px; */
 
+  /* задаємо якщо фото не завантажиться */
   background-color: #303030;
   /* зображення збільшується поки не досягне рамки */
   /* background-size: contain; */
   /* розтягується поки не заповнить весь контейнер */
   background-size: cover;
   /*  background-size: 100px 150px;*/
+
+  /* догзволяє атинці залізати на padding border content */
   background-origin: padding-box;
+  /* обрізати фон ПО облаті  padding border content */
   background-clip: padding-box;
 }

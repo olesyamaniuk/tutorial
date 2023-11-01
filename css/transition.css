@@ -1,0 +1,33 @@
+.wrapper {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px;
+  outline: 1px solid #000000;
+}
+
+.btn {
+  display: block;
+  padding: 20px 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 14px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 0 auto;
+  background-color: #2980b9;
+
+  transition: background-color 500ms linear;
+
+  /* transition-property: background-color; */
+  /* transition-duration: 500ms; */
+  /* transition-timing-function: cubic-bezier(0, 0.99, 1, -0.05);
+  transition-delay: 0ms; */
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #e74c3c;
+}
