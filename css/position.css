@@ -3,6 +3,7 @@ body {
 }
 
 .wrapper {
+  position: relative;
   width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -10,7 +11,9 @@ body {
 }
 
 .container {
-  position: relative;
+  /* задаємо бо container є предком red і
+   щоб ми могли розмістити red в цьому контейнері */
+  /* position: relative; */
   width: 700px;
   margin-left: auto;
   margin-right: auto;
@@ -27,13 +30,31 @@ body {
 }
 
 .red {
+  /* елемент виймається з потоку. ніщо його більне відчуває */
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 140px;
   height: 140px;
   background-color: #e74c3c;
 }
 
 .blue {
+  /* є в потоці. можемо задавати top bottom... */
   position: relative;
+  /* top: 10px; */
+  /* left: 10px; */
+
+  /* щоб відцентрувати задаємо в відсотках 
+  ми задаємо верхній правий кут по центру*/
+  top: 50%;
+  left: 50%;
+  /* пререміщаємо елемент на половину висоти*/
+  transform: translate(-50%, -50%);
+  /* відповідає за поворот елемента */
+  transform: rotate(-50%, -50%);
+
+  /* задажмо значення чуий елемент буде першим при зслаюванні */
   z-index: 1;
   width: 100px;
   height: 100px;
@@ -41,9 +62,13 @@ body {
 }
 
 .yellow {
+  /* вийймаєся з потоку але тепер ми не можемо його злапати
+  і він завжди залишається на сторінці */
   position: fixed;
   top: 0;
   left: 0;
+  /* щоб завжи залишався на верху 
+  щоб нічого на нього не налазило */
   z-index: 99999999;
   width: 100%;
   height: 80px;
