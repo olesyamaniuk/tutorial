@@ -19,14 +19,21 @@
       <div class="container">
         <ul class="team-list list">
           <li class="team-list__item">
+            <!-- щоб браузер вибрав який розмір фото йому треба -->
             <img
+              srcset="
+                ../images/retina/team-1@.jpg   1x,
+                ../images/retina/team-1@2x.jpg 2x
+              "
               src="../images/retina/team-1.jpg"
               alt="a member of the team"
               class="team-list__img"
             />
           </li>
           <li class="team-list__item">
+            <!-- отут результат такий самий -->
             <img
+              srcset="../images/retina/team-2@2x.jpg 2x"
               src="../images/retina/team-2.jpg"
               alt="a member of the team"
               class="team-list__img"
@@ -34,6 +41,7 @@
           </li>
           <li class="team-list__item">
             <img
+              srcset="../images/retina/team-3@2x.jpg 2x"
               src="../images/retina/team-3.jpg"
               alt="a member of the team"
               class="team-list__img"
